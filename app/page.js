@@ -28,7 +28,7 @@ function Home(){
       <span className='logo'>PASS GEN</span>
       <input name='length' id='length' type='number' placeholder='Enter Length of password' min='3' max='30' onChange={(e) => {
       let f = parseInt(e.target.value.trim());
-      if(f === 30 || f < 30 || f > 3){
+      if(f === 30 || f < 30 || f !== ""){
         setLength(parseInt(e.target.value.trim()))
       }else{
         e.target.value = 'Enter Length of password'
