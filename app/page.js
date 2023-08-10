@@ -32,6 +32,7 @@ function Home(){
         setLength(parseInt(e.target.value.trim()))
       }else{
         alert("Password length must be less than or equal to 30");
+        e.target.value = 0
       }
       }} />
       {pass && <div><p>Your Password</p><p>{pass}</p></div>}
