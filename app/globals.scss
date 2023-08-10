@@ -1,0 +1,47 @@
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+  #main{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #191970;
+    color: #c0c0c0;
+
+    .logo{
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 24px;
+      color: #f5f5f5;
+    }
+
+    #length{
+      padding: 15px;
+      border: none;
+      width: 250px;
+      border-bottom: 1px solid black;
+    }
+
+    p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      font-weight: bold; 
+      color: ghostwhite; 
+      margin-top: 10px;
+    }
+  }
+}
