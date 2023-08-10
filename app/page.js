@@ -28,11 +28,11 @@ function Home(){
       <span className='logo'>PASS GEN</span>
       <input name='length' id='length' type='number' placeholder='Enter Length of password' min='3' max='30' onChange={(e) => {
       let f = parseInt(e.target.value.trim());
-      if(f <= 30){
+      if(f === 30 || f < 30 || f > 3){
         setLength(parseInt(e.target.value.trim()))
       }else{
-        alert("Password length must be less than or equal to 30");
-        e.target.value = 0
+        e.target.value = 'Enter Length of password'
+        alert('Password length must be less than or equal to 30');
       }
       }} />
       {pass && <div><p>Your Password</p><p>{pass}</p></div>}
